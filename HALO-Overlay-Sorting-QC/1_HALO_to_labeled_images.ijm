@@ -142,11 +142,10 @@ for (j = 0; j < AI_image_snapshot_numbers.length; j++) {
 	Un_image_path = download_path+unlabeled_image_name;
 	
 	//calling functions opens images and saves cells with file name corresponding to HALO classification, UWA#, Layer#, and FOV#
-	setForegroundColor(255, 0, 0);
+	setForegroundColor(0, 255, 255);
 	label_cells_by_HALO_classification("pos");
 	
 	if (check_for_negatives==true) {
-		setForegroundColor(0, 255, 0);
 		label_cells_by_HALO_classification("neg");
 	}
 }
