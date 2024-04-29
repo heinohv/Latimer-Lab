@@ -9,10 +9,10 @@ BLACK = (0, 0, 0)
 AI_labeled_image_as = True
 
 # Set directories for images
-unsorted_folder = ".../1_sort/" #point to the folder with images that need to be sorted
-positive_folder_path = ".../2_sort_pos/"
-negative_folder_path = '.../2_sort_neg/'
-skipped_folder_path = '.../2_sort_skipped/'
+unsorted_folder = ".../1_sort/" # point to the folder with images that need to be sorted
+positive_folder_path = ".../2_sort_pos/" # point to the folder where you want + cells saved
+negative_folder_path = '.../2_sort_neg/' # point to the folder where you want - cells saved
+skipped_folder_path = '.../2_sort_skipped/' # point to the folder where you want skipped images saved
 
 def load_image(image_path):
     try:

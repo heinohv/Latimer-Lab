@@ -40,7 +40,7 @@ function label_cells_by_HALO_classification(AI_label) {
 		R_min = 220; R_max = 255; B_min = 0; B_max = 70; G_min = 0; G_max = 70;
 	}
 	if (AI_label == "neg") { //RBG bounds for negative image label
-		R_min = 0; R_max = 70; B_min = 0; B_max = 70; G_min = 220; G_max = 255;
+		R_min = 0; R_max = 80; B_min = 0; B_max = 100; G_min = 190; G_max = 255;
 	}
 	
 	//open AI labeled image, and turn pixels matching the color code into ROIs
@@ -142,7 +142,7 @@ for (j = 0; j < AI_image_snapshot_numbers.length; j++) {
 	Un_image_path = download_path+unlabeled_image_name;
 	
 	//calling functions opens images and saves cells with file name corresponding to HALO classification, UWA#, Layer#, and FOV#
-	setForegroundColor(0, 255, 255);
+	setForegroundColor(0, 0, 0);
 	label_cells_by_HALO_classification("pos");
 	
 	if (check_for_negatives==true) {
